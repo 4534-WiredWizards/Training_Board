@@ -1,0 +1,32 @@
+Welcome to the Programming Progress Log, or ProgProgLog for short.
+
+This is where we will track what has happened each meeting, as well as what the next goal is, with respect to each branch of the code.
+
+**************************** DriveMotor Branch Overall Goals ****************************
+These are the overarching, conceptual goals for the project.
+
+Level 0: Part exists, Developers can access it.  --ACHIEVED 12-6-2017--
+Level 1: Part has baseline functions and commands to move.
+Level 2: Part is fully operational, featuring command to turn a fixed rate for a set time and command to vary speed using joystick.
+Level 3: Part is optimized to execute in the most efficient way, with extra features such as acceleration.
+
+**************************** DriveMotor Branch Current Plans ****************************
+These are the specific tasks yet to be done, sorted by goal level.
+
+Level 1:
+Add JoystickDrive as default command
+
+Level 2:
+Add timeout to DriveForward
+
+Level 3:
+Add software acceleration to drive commands
+
+
+
+
+**************************** DriveMotor Branch Project Progress ****************************
+
+
+12-7-2017: 
+Progress: Log is created. Rate parameter is established in DriveForward.
