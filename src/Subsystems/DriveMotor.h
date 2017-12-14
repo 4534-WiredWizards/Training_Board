@@ -13,6 +13,7 @@
 #define DRIVEMOTOR_H
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
+#include "Commands/StickOfJoy.h"
 
 /**
  *
