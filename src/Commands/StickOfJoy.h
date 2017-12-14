@@ -1,9 +1,12 @@
-#ifndef StickOfJoy_H
-#define StickOfJoy_H
+#ifndef STICKOFJOY_H
+#define STICKOFJOY_H
 
-#include "../CommandBase.h"
+#include "Commands/Subsystem.h"
 
-class StickOfJoy : public CommandBase {
+#include "../../../../git/Training_Board/src/Robot.h"
+
+
+class StickOfJoy : public Command {
 public:
 	StickOfJoy();
 	void Initialize();
