@@ -40,10 +40,10 @@ void EncoderMotor::SetMotor(double speed) {
 void EncoderMotor::StopMotor() {
 	speedController1->StopMotor();
 }
-int EncoderMotor::GetEncodor(){
+int EncoderMotor::GetEncoder(){
 	return quadratureEncoder1->Get();
 }
-void EncoderMotor::ResetMotor(){
+void EncoderMotor::ResetEncoder(){
 	quadratureEncoder1->Reset();
 }
 // Put methods for controlling this subsystem

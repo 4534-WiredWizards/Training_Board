@@ -24,26 +24,26 @@ TurnDistance::TurnDistance(): Command() {
 
 // Called just before this Command runs the first time
 void TurnDistance::Initialize() {
-
+Robot::encoderMotor->ResetEncoder();
 }
 
 // Called repeatedly when this Command is scheduled to run
 void TurnDistance::Execute() {
-
+Robot::encoderMotor->SetMotor(.5);
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool TurnDistance::IsFinished() {
-    return false;
+    return 1024<=Robot::encoderMotor->GetEncoder();
 }
 
 // Called once after isFinished returns true
 void TurnDistance::End() {
-
+Robot::encoderMotor->StopMotor();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void TurnDistance::Interrupted() {
-
+TurnDistance::End();
 }
